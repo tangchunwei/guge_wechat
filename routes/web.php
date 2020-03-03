@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+// 服务端验证
+Route::any('/wechat/serve', 'ServeController@serve');
+// 创建菜单
+Route::get('/wechat/menu', 'MenuController@greate');
+
