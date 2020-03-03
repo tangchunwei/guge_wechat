@@ -11,14 +11,14 @@ class MenuController extends Controller
     public function greate(){
         $buttons = [
             [
-                "type" => "click",
+                "type" => "view",
                 "name" => "成绩查询",
-                "key"  => "GRADE_SEARCH"
+                "url"  => "http://182.254.228.218/wechat/grade"
             ],
             [
                 "type" => "view",
                 "name" => "我要报名",
-                "url"  => "http://182.254.228.218/signup"
+                "url"  => "http://182.254.228.218/wechat/signup"
             ],
         ];
         $config=config('wechat.official_account.default');
